@@ -1,6 +1,16 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --title-dark-theme-color: #ffffff;
+  --title-light-theme-color: #212121;
+  --accent-color: #2196f3;
+  --text-dark-theme-color: #757575;
+  --text-light-theme-color: #ffffff;
+}
+
 body {
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   color: #757575;
 }
@@ -13,6 +23,8 @@ body {
   list-style: none;
 }
 
+/* HEADER */
+
 .navigation-list-link,
 .header-address-link,
 .header-tel-link {
@@ -20,12 +32,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-light-theme-color);
 }
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header-tel-link {
@@ -34,7 +46,7 @@ body {
 
 .header-address-link:hover,
 .header-address-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .modal-btn {
@@ -46,4 +58,114 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+/* HERO Section */
+/* изменил цвет заголовка чтобы он был пока что виден на белом фоне */
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--title-light-theme-color);
+}
+
+/* О НАС */
+.title {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-light-theme-color);
+}
+
+.description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.services-title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.services-description {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* OUR TEAM */
+
+.team-title {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+
+.team-name-title {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.84;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-list-item-position {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* OUR CLIENTS */
+
+.clients-title {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* FOOTER */
+
+.contact-list-item-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
