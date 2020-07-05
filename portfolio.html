@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <!--ШАПКА САЙТА-->
@@ -34,85 +40,85 @@
       </address>
     </header>
     <main>
-      <ul>
+      <ul class="filter-list list">
         <li>
-          <a href="">Все</a>
+          <a class="filter-list-link" href="">Все</a>
         </li>
         <li>
-          <a href="">Веб-сайты</a>
+          <a class="filter-list-link" href="">Веб-сайты</a>
         </li>
         <li>
-          <a href="">Приложения</a>
+          <a class="filter-list-link" href="">Приложения</a>
         </li>
         <li>
-          <a href="">Дизайн</a>
+          <a class="filter-list-link" href="">Дизайн</a>
         </li>
         <li>
-          <a href="">Маркетинг</a>
+          <a class="filter-list-link" href="">Маркетинг</a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Технокряк</p>
-            <p>Веб-сайт</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Технокряк</p>
+            <p class="product-description">Веб-сайт</p>
           </a>
         </li>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Постер New Orlean vs Golden Star</p>
-            <p>Дизайн</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Постер New Orlean vs Golden Star</p>
+            <p class="product-description">Дизайн</p>
           </a>
         </li>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Ресторан Seafood</p>
-            <p>Приложение</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Ресторан Seafood</p>
+            <p class="product-description">Приложение</p>
           </a>
         </li>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Проект Prime</p>
-            <p>Маркетинг</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Проект Prime</p>
+            <p class="product-description">Маркетинг</p>
           </a>
         </li>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Проект Boxes</p>
-            <p>Приложение</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Проект Boxes</p>
+            <p class="product-description">Приложение</p>
           </a>
         </li>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Inspiration has no Borders</p>
-            <p>Веб-сайт</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Inspiration has no Borders</p>
+            <p class="product-description">Веб-сайт</p>
           </a>
         </li>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Издание Limited Edition</p>
-            <p>Дизайн</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Издание Limited Edition</p>
+            <p class="product-description">Дизайн</p>
           </a>
         </li>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Проект LAB</p>
-            <p>Маркетинг</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Проект LAB</p>
+            <p class="product-description">Маркетинг</p>
           </a>
         </li>
         <li>
-          <a href=""
-            ><img src="" alt="" />
-            <p>Growing Business</p>
-            <p>Приложение</p>
+          <a class="product-list-item-link" href=""
+            ><img src="#" alt="" />
+            <p class="title-description">Growing Business</p>
+            <p class="product-description">Приложение</p>
           </a>
         </li>
       </ul>
@@ -120,30 +126,49 @@
     <footer>
       <section>
         <h3 hidden>Контакты</h3>
-        <ul>
+        <ul class="contact-list list">
           <li>
-            <a href="index.html">Web Studio</a>
+            <a href="index.html"><span>Web</span>Studio</a>
           </li>
           <li>
-            <a href="mailto:info@example.com">info@example.com</a>
+            <address class="address">
+              <a class="contact-list-item-link link" href="" target="_blank"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </address>
           </li>
-          <li>><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li class="contact-list-item">
+            <address class="address">
+              <a
+                class="contact-list-item-link link"
+                href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </address>
+          </li>
+          <li class="contact-list-item">
+            <address class="address">
+              <a class="contact-list-item-link link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </li>
         </ul>
       </section>
       <section>
         <h3 hidden>Социальные сети</h3>
         <p><b>ПРИСОЕДИНЯЙТЕСЬ</b></p>
-        <ul>
-          <li>
+        <ul class="social-links list list">
+          <li class="social-links-item-link link">
             <a href="" aria-label="иконка инстаграма"></a>
           </li>
-          <li>
+          <li class="social-links-item-link link">
             <a href="" aria-label="иконка твиттера"></a>
           </li>
-          <li>
+          <li class="social-links-item-link link">
             <a href="" aria-label="иконка фейсбука"></a>
           </li>
-          <li>
+          <li class="social-links-item-link link">
             <a href="" aria-label="иконка линкедина"></a>
           </li>
         </ul>
